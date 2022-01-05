@@ -5,7 +5,7 @@ from datetime import timedelta
 from datetime import datetime
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
-contract = input('Input the contract for the collection: ')
+contract = input('0x123b30E25973FeCd8354dd5f41Cc45A3065eF88C')
 #identify the NFT collection using the smart contract address
 
 headers = {
@@ -17,7 +17,7 @@ sale = False
 
 #Forever loop that iterates every 60 seconds. (Monitors for a sale every 60 seconds)
 while sale != True: 
-    dhook = DiscordWebhook('https://discord.com/api/webhooks/917167474615652373/sf9ENqdTNBIDAYuwO0lRQHYhIaxFVBTWBcHAog9KRs74TFZQI1_1zQMGLe7uootbPa2p')
+    dhook = DiscordWebhook('https://discord.com/api/webhooks/928234163113447464/qrk26-xVgyTlY2eVuHZBWnZq_wSbazANCOvaqcXrzfPk5gTGufDk08Z7lk-Mkw_nhQeZ')
     #Discord webhook to send the embed.
     minago = int((datetime.now() - timedelta(minutes=10)).timestamp())
     #Finds the timestamp of a minute before current time
